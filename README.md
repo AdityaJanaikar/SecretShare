@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # conftwitter
 
 A new Flutter project.
@@ -17,5 +16,5 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 =======
 # SecretShare
- An application which facilitates sending and viewing anonymous confessions which can be publicly viewed.
+ An application that facilitates sending and viewing anonymous confessions which can be publicly viewed.
 >>>>>>> origin/main
