@@ -1,9 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:conftwitter/post.dart';
+import 'package:conftwitter/conform.dart';
+import 'package:http/http.dart' as http;
 
 void main() {
+  //testInternetConnectivity();
   runApp(MyApp());
 }
+
+// void testInternetConnectivity() async {
+//   try {
+//     var response = await http.get(Uri.parse('https://jsonplaceholder.typicode.com/posts/1'));
+//     if (response.statusCode == 200) {
+//       print('Internet access is working. Response: ${response.body}');
+//     } else {
+//       print('Failed to access the internet. Status code: ${response.statusCode}');
+//     }
+//   } catch (e) {
+//     print('Error: $e');
+//   }
+// }
 
 class MyApp extends StatelessWidget {
   @override
@@ -61,6 +77,10 @@ class ConfessionsPage extends StatelessWidget {
         onPressed: () {
           // Add functionality for the floating action button here
           // e.g., navigate to a form for submitting new confessions
+          showDialog(
+            context: context,
+            builder: (BuildContext context) => ConForm(),
+          );
         },
         child: Icon(Icons.add),
       ),

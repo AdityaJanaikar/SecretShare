@@ -1,11 +1,12 @@
 const express = require('express');
 const admin = require('firebase-admin');
 const database = require('firebase/database')
+//const database = require('firebase/firestore')
  
 // Initialize Firebase Admin SDK
 admin.initializeApp({
   credential: admin.credential.applicationDefault(),
-  databaseURL: 'https://shris-data.firebaseio.com',
+  databaseURL: 'https://shris-data-default-rtdb.asia-southeast1.firebasedatabase.app',
   //project-id
   "project_id": "shris-data",
 });

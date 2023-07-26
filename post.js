@@ -3,12 +3,12 @@ const fetch = require('node-fetch');
 // POST request example
 const url = 'http://localhost:3000/data';
 const data = {
-  documentName: 'Document1',
+  documentName: 'something.word',
   sender: {
-    atSign: '@Bob'
+    atSign: '@Abc'
   },
   recipient: {
-    atSign: '@Alice'
+    atSign: '@Def'
   }
 };
 
